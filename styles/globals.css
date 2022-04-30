@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+      @apply bg-white rounded-md overflow-hidden transition-all ease-in-out duration-300 shadow-md relative my-4 hover:shadow-lg hover:scale-105 ;
+}
+.badge{
+      @apply  absolute text-[10px] sm:text-xs text-gray-600 top-0 m-2 px-2 pt-2 pb-1 bg-[#f9e9c4] rounded-full cursor-default;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.btn{
+@apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer md:text-[12px] tracking-wider
 }
